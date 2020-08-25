@@ -1,1 +1,1 @@
-export './responsiveWidget.dart';
+export 'responsiveWidget.dart';
