@@ -6,3 +6,4 @@ Flutter Repository with useful Widgets.
 
 
 - Responsive Widget: Widget to manage responsive Layouts for Flutter Applications.
+- Routes Method: Method to simplify the use of Routes in Flutter.
