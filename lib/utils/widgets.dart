@@ -1,0 +1,1 @@
+export '../widgets/responsiveWidget.dart';

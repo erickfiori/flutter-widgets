@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/widgets.dart';
+import './utils/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,29 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ResponsiveWidget(
-      builder: (context, constraints) {
-        return Container(
-          child: Center(
-            child: FlatButton(
-              onPressed: () {
-                SnackBar snackBar =
-                    SnackBar(content: Text("HERE\'S YOU SNACKBAR!"));
-                return Scaffold.of(context).showSnackBar(snackBar);
-              },
-              child: Text('SNACK!'),
-            ),
-          ),
-        );
-      },
+      home: Home(),
     );
   }
 }
